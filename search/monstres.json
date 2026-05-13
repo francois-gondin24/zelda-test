@@ -1,0 +1,420 @@
+{
+    "Bokoblin": {
+        "Bokoblin rouge": {
+            "description": "Petit monstre que l'on trouve un peu partout dans Hyrule. Il n'est pas très intelligent mais peut s'avérer dangereux en groupe.",
+            "image": 0,
+            "PV": 25,
+            "butins": "Corne de Bokoblin, Croc de Bokoblin, Viscère de Bokoblin"
+        },
+        "Bokoblin bleu": {
+            "description": "Plus résistant et intelligent que le rouge, il manie des armes plus puissantes.",
+            "image": 0,
+            "PV": 72,
+            "butins": "Corne de Bokoblin bleu, Croc de Bokoblin, Viscère de Bokoblin"
+        },
+        "Bokoblin noir": {
+            "description": "Une version féroce du Bokoblin, entraînée pour le combat intense.",
+            "image": 0,
+            "PV": 240,
+            "butins": "Corne de Bokoblin noir, Croc de Bokoblin, Viscère de Bokoblin"
+        },
+        "Bokoblin Argenté": {
+            "description": "Le plus puissant des Bokoblins, corrompu par la magie de Ganon. Ses cornes sont extrêmement tranchantes.",
+            "image": 0,
+            "PV": 720,
+            "butins": "Corne de Bokoblin argenté, Croc de Bokoblin, Viscère de Bokoblin"
+        }
+    },
+    "Moblin": {
+        "Moblin rouge": {
+            "description": "Un monstre immense avec une force physique incroyable. Il peut ramasser des Bokoblins pour les jeter sur ses ennemis.",
+            "image": 0,
+            "PV": 56,
+            "butins": "Corne de Moblin, Ongle de Moblin, Viscère de Moblin"
+        },
+        "Moblin bleu": {
+            "description": "Version plus robuste du Moblin, souvent postée pour garder des camps importants.",
+            "image": 0,
+            "PV": 144,
+            "butins": "Corne de Moblin bleu, Ongle de Moblin, Viscère de Moblin"
+        },
+        "Moblin noir": {
+            "description": "Un Moblin d'élite doté d'une vitalité impressionnante et d'une force dévastatrice.",
+            "image": 0,
+            "PV": 360,
+            "butins": "Corne de Moblin noir, Ongle de Moblin, Viscère de Moblin"
+        },
+        "Moblin Argenté": {
+            "description": "Cette créature argentée surpasse tous les autres Moblins. Il est capable d'encaisser énormément de dégâts.",
+            "image": 0,
+            "PV": 1080,
+            "butins": "Corne de Moblin argenté, Ongle de Moblin, Viscère de Moblin"
+        }
+    },
+    "Chef Boko": {
+        "Chef Boko rouge": {
+            "description": "Il dirige les troupes de Bokoblins avec son cor. Il utilise son poids pour écraser ses adversaires.",
+            "image": 0,
+            "PV": 200,
+            "butins": "Corne de Chef Boko, Griffe de Chef Boko, Viscère de Chef Boko"
+        },
+        "Chef Boko bleu": {
+            "description": "Un meneur plus expérimenté qui commande des patrouilles plus agressives.",
+            "image": 0,
+            "PV": 400,
+            "butins": "Corne de Chef Boko bleu, Griffe de Chef Boko, Viscère de Chef Boko"
+        },
+        "Chef Boko noir": {
+            "description": "Un véritable général de guerre parmi les monstres, très difficile à faire reculer.",
+            "image": 0,
+            "PV": 750,
+            "butins": "Corne de Chef Boko noir, Griffe de Chef Boko, Viscère de Chef Boko"
+        },
+        "Chef Boko Argenté": {
+            "description": "Le sommet de la hiérarchie des meneurs de troupes. Sa corne unique est un trésor de guerre.",
+            "image": 0,
+            "PV": 1200,
+            "butins": "Corne de Chef Boko argenté, Griffe de Chef Boko, Viscère de Chef Boko"
+        }
+    },
+    "Lézalfos": {
+        "Lézalfos": {
+            "description": "Monstre agile capable de se camoufler dans son environnement. Il attaque rapidement avec sa langue.",
+            "image": 0,
+            "PV": 50,
+            "butins": "Corne de Lézalfos, Queue de Lézalfos, Ongle de Lézalfos"
+        },
+        "Lézalfos bleu": {
+            "description": "Plus rapide et résistant, on le trouve souvent près des zones aquatiques.",
+            "image": 0,
+            "PV": 120,
+            "butins": "Corne de Lézalfos bleu, Queue de Lézalfos bleu, Ongle de Lézalfos"
+        },
+        "Lézalfos noir": {
+            "description": "Un guerrier lézard redoutable qui ne laisse aucune chance aux voyageurs imprudents.",
+            "image": 0,
+            "PV": 288,
+            "butins": "Corne de Lézalfos noir, Queue de Lézalfos noir, Ongle de Lézalfos"
+        },
+        "Lézalfos Argenté": {
+            "description": "Le Lézalfos le plus puissant, doté d'une corne en forme de faux extrêmement dangereuse.",
+            "image": 0,
+            "PV": 864,
+            "butins": "Corne de Lézalfos argenté, Queue de Lézalfos argenté, Ongle de Lézalfos"
+        },
+        "Lézalfos de feu": {
+            "description": "Il vit dans les régions volcaniques et crache des flammes. Il meurt instantanément s'il est touché par de la glace.",
+            "image": 0,
+            "PV": 160,
+            "butins": "Corne de Lézalfos de feu, Queue de Lézalfos de feu, Ongle de Lézalfos"
+        },
+        "Lézalfos de glace": {
+            "description": "Il vit dans les montagnes enneigées et projette de l'air gelé. Une flèche de feu l'élimine d'un coup.",
+            "image": 0,
+            "PV": 288,
+            "butins": "Corne de Lézalfos de glace, Queue de Lézalfos de glace, Ongle de Lézalfos"
+        },
+        "Lézalfos de électrique": {
+            "description": "Capable de générer un dôme électrique autour de lui. Très dangereux sous la pluie.",
+            "image": 0,
+            "PV": 288,
+            "butins": "Corne de Lézalfos électrique, Queue de Lézalfos électrique, Ongle de Lézalfos"
+        }
+    },
+    "Chuchus": {
+        "Chuchu de feu": {
+            "Grand chuchu de feu": {
+                "description": "Grand amas de gelée chuchu chauffée à une grande température. Il contient beaucoup de gelée, ce qui lui confère une grande résistance et une plus grande force. Il attaque en venant du sol ou des arbres pour surprendre sa cible. Attention à l'explosion qui se produit lorsque vous le tuez, elle peut vous infliger des dégâts si vous êtes trop proche.",
+                "image": 0,
+                "PV": 48,
+                "butins": "Gelée chuchu rouge"
+            },
+            "Moyen chuchu de feu": {
+                "description": "Moyen amas de gelée chuchu chauffée à une grande température. Il contient un peu plus de gelée que le petit chuchu de feu, ce qui lui confère une meilleure résistance. Il attaque en venant du sol ou des arbres pour surprendre sa cible. Attention à l'explosion qui se produit lorsque vous le tuez, elle peut vous infliger des dégâts si vous êtes trop proche.",
+                "image": 0,
+                "PV": 20,
+                "butins": "Gelée chuchu rouge"
+            },
+            "Petit chuchu de feu": {
+                "description": "Petit amas de gelée chuchu chauffée à une grande température. Il est plus rapide que les autres chuchus, mais aussi plus fragile. Il attaque en venant du sol ou des arbres pour surprendre sa cible. Attention à l'explosion qui se produit lorsque vous le tuez, elle peut vous infliger des dégâts si vous êtes trop proche.",
+                "image": 0,
+                "PV": 12,
+                "butins": "Gelée chuchu rouge"
+            }
+        },
+        "Chuchu bleu": {
+            "Grand chuchu bleu": {
+                "description": "Grand amas de gelée chuchu. Il contient beaucoup de gelée, ce qui lui confère une grande résistance et une plus grande force. Il attaque en venant du sol ou des arbres pour surprendre sa cible.",
+                "image": 0,
+                "PV": 48,
+                "butins": "Gelée chuchu"
+            },
+            "Moyen chuchu bleu": {
+                "description": "Moyen amas de gelée chuchu. Il contient un peu plus de gelée que le petit chuchu bleu, ce qui lui confère une meilleure résistance. Il attaque en venant du sol ou des arbres pour surprendre sa cible.",
+                "image": 0,
+                "PV": 20,
+                "butins": "Gelée chuchu"
+            },
+            "Petit chuchu bleu": {
+                "description": "Petit amas de gelée chuchu. Il est plus rapide que les autres chuchus, mais aussi plus fragile. Il attaque en venant du sol ou des arbres pour surprendre sa cible.",
+                "image": "search/petitChuchu.jpg",
+                "PV": 3,
+                "butins": "Gelée chuchu"
+            }
+        },
+        "Chuchu de glace": {
+            "Grand chuchu de glace": {
+                "description": "Grand amas de gelée chuchu gelée. Il contient beaucoup de gelée, ce qui lui confère une grande résistance et une plus grande force. Il attaque en venant du sol ou des arbres pour surprendre sa cible. Attention à l'explosion qui se produit lorsque vous le tuez, elle peut vous geler et vous infliger des dégâts si vous êtes trop proche.",
+                "image": 0,
+                "PV": 48,
+                "butins": "Gelée chuchu blanche"
+            },
+            "Moyen chuchu de glace": {
+                "description": "Moyen amas de gelée chuchu gelée. Il contient un peu plus de gelée que le petit chuchu de glace, ce qui lui confère une meilleure résistance. Il attaque en venant du sol ou des arbres pour surprendre sa cible. Attention à l'explosion qui se produit lorsque vous le tuez, elle peut vous geler et vous infliger des dégâts si vous êtes trop proche.",
+                "image": 0,
+                "PV": 20,
+                "butins": "Gelée chuchu blanche"
+            },
+            "Petit chuchu de glace": {
+                "description": "Petit amas de gelée chuchu gelée. Il est plus rapide que les autres chuchus, mais aussi plus fragile. Il attaque en venant du sol ou des arbres pour surprendre sa cible. Attention à l'explosion qui se produit lorsque vous le tuez, elle peut vous geler et vous infliger des dégâts si vous êtes trop proche.",
+                "image": 0,
+                "PV": 12,
+                "butins": "Gelée chuchu blanche"
+            }
+        },
+        "Chuchu électrique": {
+            "Grand chuchu électrique": {
+                "description": "Grand amas de gelée chuchu électrifiée. Il contient beaucoup de gelée, ce qui lui confère une grande résistance et une plus grande force. Il attaque en venant du sol ou des arbres pour surprendre sa cible. Attention à l'explosion qui se produit lorsque vous le tuez, elle peut vous paralyser, vous faire perdre vos armes et vous infliger des dégâts si vous êtes trop proche.",
+                "image": 0,
+                "PV": 48,
+                "butins": "Gelée chuchu jaune"
+            },
+            "Moyen chuchu électrique": {
+                "description": "Moyen amas de gelée chuchu électrifiée. Il contient un peu plus de gelée que le petit chuchu électrique, ce qui lui confère une meilleure résistance. Il attaque en venant du sol ou des arbres pour surprendre sa cible. Attention à l'explosion qui se produit lorsque vous le tuez, elle peut vous paralyser, vous faire perdre vos armes et vous infliger des dégâts si vous êtes trop proche.",
+                "image": 0,
+                "PV": 20,
+                "butins": "Gelée chuchu jaune"
+            },
+            "Petit chuchu électrique": {
+                "description": "Petit amas de gelée chuchu électrifiée. Il est plus rapide que les autres chuchus, mais aussi plus fragile. Il attaque en venant du sol ou des arbres pour surprendre sa cible. Attention à l'explosion qui se produit lorsque vous le tuez, elle peut vous paralyser, vous faire perdre vos armes et vous infliger des dégâts si vous êtes trop proche.",
+                "image": 0,
+                "PV": 12,
+                "butins": "Gelée chuchu jaune"
+            }
+        }
+    },
+    "Octoroks": {
+        "Octofourré": {
+            "description": "Il se cache sous un buisson pour surprendre ses proies en tirant des pierres.",
+            "image": 0,
+            "PV": 8,
+            "butins": "Tentacule d'Octorok, Ballon d'Octorok, Oeil d'Octorok"
+        },
+        "Octoflot": {
+            "description": "Il vit dans l'eau et recrache des projectiles avec une précision redoutable dès qu'il repère une cible.",
+            "image": 0,
+            "PV": 8,
+            "butins": "Tentacule d'Octorok, Ballon d'Octorok, Oeil d'Octorok"
+        },
+        "Octopierre": {
+            "description": "Vivant sur les flancs des volcans, il aspire l'air environnant. Il peut nettoyer ou réparer les armes qu'on lui lance.",
+            "image": 0,
+            "PV": 8,
+            "butins": "Tentacule d'Octorok, Ballon d'Octorok, Oeil d'Octorok"
+        },
+        "Octocoffre": {
+            "description": "Il imite la forme d'un coffre pour attirer les aventuriers cupides et les attaquer au dernier moment.",
+            "image": 0,
+            "PV": 8,
+            "butins": "Tentacule d'Octorok, Ballon d'Octorok, Oeil d'Octorok"
+        },
+        "Octoneige": {
+            "description": "Caché dans la neige, il ne sort que pour tirer avant de s'enfouir à nouveau.",
+            "image": 0,
+            "PV": 8,
+            "butins": "Tentacule d'Octorok, Ballon d'Octorok, Oeil d'Octorok"
+        }
+    },
+    "Lynels": {
+        "Lynel (classique)": {
+            "description": "Un centaure terrifiant doté d'une force herculéenne. Ses attaques sont aussi rapides que dévastatrices.",
+            "image": 0,
+            "PV": 2000,
+            "butins": "Corne de Lynel, Sabot de Lynel, Viscère de Lynel"
+        },
+        "Lynel bleu": {
+            "description": "Un Lynel plus agressif portant des armes renforcées. Ne le sous-estimez pas.",
+            "image": 0,
+            "PV": 3000,
+            "butins": "Corne pointue de Lynel bleu, Corne plate de Lynel bleu, Sabot de Lynel, Viscère de Lynel"
+        },
+        "Lynel blanc": {
+            "description": "L'un des prédateurs les plus féroces d'Hyrule. Il peut manier le feu et les flèches explosives.",
+            "image": 0,
+            "PV": 4000,
+            "butins": "Corne pointue de Lynel blanc, Corne plate de Lynel blanc, Sabot de Lynel, Viscère de Lynel"
+        },
+        "Lynel Argenté": {
+            "description": "Considéré comme le monstre le plus puissant du royaume. Sa résistance et sa puissance d'attaque sont sans égales.",
+            "image": 0,
+            "PV": 6000,
+            "butins": "Corne pointue de Lynel argenté, Corne plate de Lynel argenté, Sabot de Lynel, Viscère de Lynel"
+        }
+    },
+    "Griocks": {
+        "Griock de feu": {
+            "description": "Un dragon à trois têtes qui crache des boules de feu géantes. Il survole souvent les ponts ou les sommets.",
+            "image": 0,
+            "PV": 8000,
+            "butins": "Aile de Griock, Corne de Griock de feu, Viscère de Griock"
+        },
+        "Griock de glace": {
+            "description": "Ses trois têtes projettent des rayons de glace capables de geler instantanément n'importe quel voyageur.",
+            "image": 0,
+            "PV": 8000,
+            "butins": "Aile de Griock, Corne de Griock de glace, Viscère de Griock"
+        },
+        "Griock de électrique": {
+            "description": "Il déchaîne des tempêtes d'éclairs. Approcher ce monstre sous la pluie est un suicide.",
+            "image": 0,
+            "PV": 8000,
+            "butins": "Aile de Griock, Corne de Griock électrique, Viscère de Griock"
+        },
+        "Roi Griock": {
+            "description": "Le seigneur des Griocks, possédant une tête de chaque élément (Feu, Glace, Foudre). Un véritable cauchemar vivant.",
+            "image": 0,
+            "PV": 12000,
+            "butins": "Aile de Griock, Corne de Griock de feu, Corne de Griock de glace, Corne de Griock électrique"
+        }
+    },
+    "Golémax": {
+        "Golémax": {
+            "description": "Un assemblage de cubes antiques maintenus par une énergie mystérieuse. Il peut changer de forme.",
+            "image": 0,
+            "PV": 1200,
+            "butins": "Orbe d'énergie Soneau, Noyau de Golémax"
+        },
+        "Golémax amélioré": {
+            "description": "Plus grand et capable de se transformer en plateforme volante, il est beaucoup plus difficile à atteindre.",
+            "image": 0,
+            "PV": 2400,
+            "butins": "Orbe d'énergie Soneau, Noyau de Golémax amélioré"
+        },
+        "Golémax ultime": {
+            "description": "La version la plus sophistiquée des gardiens cubes. Il possède une puissance de frappe colossale.",
+            "image": 0,
+            "PV": 4000,
+            "butins": "Grande orbe d'énergie Soneau, Noyau de Golémax ultime"
+        }
+    },
+    "Moldarquors": {
+        "Moldarquor (classique)": {
+            "description": "Un énorme monstre qui nage dans le sable du désert Gerudo. Il repère ses proies grâce aux vibrations du sol.",
+            "image": 0,
+            "PV": 1500,
+            "butins": "Nageoire de Moldarquor, Viscère de Moldarquor, Mâchoire de Moldarquor"
+        }
+    },
+    "Gibdos": {
+        "Gibdo (classique)": {
+            "description": "Une créature insectoïde à l'apparence de momie. Sa peau est insensible aux armes physiques tant qu'elle n'est pas brûlée ou mouillée.",
+            "image": 0,
+            "PV": 60,
+            "butins": "Os de Gibdo, Aile de Gibdo"
+        },
+        "Gibdo ailé": {
+            "description": "Une variante du Gibdo capable de voler. Il harcèle ses cibles depuis les airs avec des attaques imprévisibles.",
+            "image": 0,
+            "PV": 80,
+            "butins": "Os de Gibdo, Aile de Gibdo"
+        }
+    },
+    "Sorciers": {
+        "Sorcier de feu": {
+            "description": "Il flotte dans les airs et utilise une baguette pour invoquer des météores enflammés.",
+            "image": 0,
+            "PV": 150,
+            "butins": "Baguette de feu / Rubis"
+        },
+        "Sorcier de glace": {
+            "description": "Il aime geler ses ennemis avant de rire cruellement. Il est très vulnérable au feu.",
+            "image": 0,
+            "PV": 150,
+            "butins": "Baguette de glace / Saphir"
+        },
+        "Sorcier électrique": {
+            "description": "Il invoque des nuages d'orage et lance des boules d'électricité rebondissantes.",
+            "image": 0,
+            "PV": 150,
+            "butins": "Baguette électrique / Topaze"
+        }
+    },
+    "Lithoroks": {
+        "Lithorok": {
+            "description": "Un monstre qui ressemble à un simple tas de rochers jusqu'à ce qu'il se lève. Son point faible est le gisement de minerai sur son dos.",
+            "image": 0,
+            "PV": 600,
+            "butins": "Ambre brut, Opale, Rubis, Cœur de Lithorok"
+        },
+        "Lithorok (Rare)": {
+            "description": "Un Lithorok contenant des minerais précieux comme des diamants bruts.",
+            "image": 0,
+            "PV": 1200,
+            "butins": "Diamant brut, Rubis, Saphir, Cœur de Lithorok rare"
+        },
+        "Magmarok": {
+            "description": "Un Lithorok de magma pur. Il faut le refroidir avec de l'eau ou de la glace pour pouvoir l'escalader.",
+            "image": 0,
+            "PV": 1000,
+            "butins": "Silex, Rubis, Cœur de Magmarok"
+        },
+        "Cryorok": {
+            "description": "Un Lithorok de glace solide. Il gèle tout ce qu'il touche, sauf si on utilise des flammes pour faire fondre sa surface.",
+            "image": 0,
+            "PV": 1000,
+            "butins": "Silex, Saphir, Cœur de Cryorok"
+        }
+    },
+    "Mains miasmatiques": {
+        "Mains de miasmes": {
+            "description": "Cinq mains terrifiantes qui émergent des miasmes pour attraper Link. Si elles sont vaincues, le Spectre de Ganon apparaît généralement.",
+            "image": 0,
+            "PV": 600,
+            "butins": "Amas de ténèbres"
+        }
+    },
+    "Golems": {
+        "Golems de combat": {
+            "Golem Caporal": {
+                "description": "Le modèle de base des soldats Soneaus. Bien qu'assez lent, il manie les armes avec une précision mécanique.",
+                "image": 0,
+                "PV": 15,
+                "butins": "Corne de Golem caporal, Orbe d'énergie Soneau"
+            },
+            "Golem Sergent": {
+                "description": "Reconnaissable à sa structure plus imposante, il est beaucoup plus agressif que le caporal.",
+                "image": 0,
+                "PV": 100,
+                "butins": "Corne de Golem sergent, Orbe d'énergie Soneau"
+            },
+            "Golem Lieutenant": {
+                "description": "Un combattant redoutable doté d'une armure plaquée. Il ne recule jamais devant les attaques physiques.",
+                "image": 0,
+                "PV": 200,
+                "butins": "Corne de Golem lieutenant, Grande orbe d'énergie Soneau"
+            },
+            "Golem Colonel": {
+                "description": "Le summum de l'ingénierie guerrière Soneau. Sa puissance est comparable à celle d'un boss.",
+                "image": 0,
+                "PV": 500,
+                "butins": "Corne de Golem colonel, Grande orbe d'énergie Soneau"
+            }
+        },
+        "Golem Archer": {
+            "description": "Unité de soutien Soneau spécialisée dans le tir à distance. Il peut ajuster sa trajectoire pour toucher ses cibles en mouvement.",
+            "image": 0,
+            "PV": 15,
+            "butins": "Vieil arc Soneau, Orbe d'énergie Soneau"
+        }
+    }
+}

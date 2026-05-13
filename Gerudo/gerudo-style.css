@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-attachment: fixed;
+    background-image: url('gerudo-fond.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+header {
+    background-color: #a65c2fa9;
+    color: white;
+    padding: 20px;
+    margin: 20px 265px;
+    text-align: center;
+    border-radius: 30px;
+}
+h1 {
+    margin: 0;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+section {
+    padding: 20px;
+}
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+.quest {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.quest h3 {
+    margin-top: 0;
+}
+.container {
+    padding: 20px;
+    background-color: #a65c2fa9;
+    border-radius: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+.img2 {
+    border-radius: 30px;
+    box-shadow: 0 0 20px 10px #a65c2fa9;
+}
+button {
+    background-color: #a65c2fa9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7d3e1fa9;
+}
+
+footer {
+    background-color: #a65c2fa9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-radius: 30px 30px 0 0;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #5b2c16;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin: 10px 0;
+}

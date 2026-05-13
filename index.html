@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda-totk</title>
+    <link href="style/style.css" rel="stylesheet">
+    <link href="carrousel/carrousel.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63f602bab9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <h1 id="title">Zelda: Tears of the Kingdom</h1>
+        <label class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="monsterSearch" type="text" placeholder="Rechercher un monstre...">
+        </label>
+        <label class="switch">
+            <input type="checkbox" id="theme-checkbox">
+            <span class="slider"></span>
+        </label>
+    </header>
+    <div id="container">
+        <div id="container-buttons">
+            <a class="bouton" href="https://francois-gondin24.github.io/home">Accueil</a>
+            <a class="bouton" href="https://yoannick.github.io/botw">Breath of the wild</a>
+            <a class="bouton" href="https://francois-gondin24.github.io/quiz_botw">Quizz Breath of the wild</a>
+        </div>
+        <div id="firstPart" style="border-radius: 30px 30px 0 0;">
+            <h2>Bienvenue sur le site de Zelda: Tears of the Kingdom</h2>
+            <p>Zelda: Tears of the Kingdom est un jeu vidéo d'action-aventure développé et publié par Nintendo pour la console Nintendo Switch...</p>
+            <h3>Caractéristiques du jeu</h3>
+                <ul>
+                    <li>Exploration d'un vaste monde ouvert</li>
+                    <li>Graphismes époustouflants</li>
+                    <li>Quêtes et énigmes captivantes</li>
+                    <li>Combats dynamiques</li>
+                </ul>
+            <h3>Personnages principaux</h3>
+                <ul class="list">
+                    <li>Link</li>
+                    <li>Zelda</li>
+                    <li>Ganondorf</li>
+                    <li>Babil (peuple Piaf)</li>
+                    <li>Yunobo (peuple Goron)</li>
+                    <li>Sidon (peuple Zora)</li>
+                    <li>Riju (peuple Gerudo)</li>
+                    <li>Raurou (peuple Soneau)</li>
+                    <li>Sonia (peuple Soneau)</li>
+                    <li>Impa (Village de Cocorico)</li>
+                </ul>
+        </div>
+        <div id="secondPart">
+            <h3>Galerie</h3>
+                <div class="carrousel-container">
+                    <button class="arrow left" id="prev">&#10094;</button>
+                    <div class="carrousel">
+                        <img class="img" src="carrousel/images.jpg">
+                        <img class="img" src="carrousel/ganondorf img.webp">
+                        <img class="img" src="Piaf/babil_base_img.jpg">
+                        <img class="img" src="carrousel/Link img.jpg">
+                        <img class="img" src="carrousel/Zelda img.jpg">                        
+                        <img class="img" src="Goron/yunobo_base_img.jpg">
+                        <img class="img" src="carrousel/Link img.webp">
+                        <img class="img" src="Zora/sidon_base_img.jpg">
+                        <img class="img" src="Gerudo/riju_base_img.jpg">
+                        <img class="img" src="carrousel/ganondorf img.png">
+                        <img class="img" src="carrousel/Link img(2).webp">
+                        <img class="img" src="carrousel/Link&Zelda img.webp">
+
+                    </div>
+                    <button class="arrow right" id="next">&#10095;</button>
+                </div>
+        </div>
+        <div id="thirdPart">
+            <details class="details">
+                <summary>Peuple Piaf</summary>
+                <p><a href="Piaf/piaf.html">Le peuple piaf</a> est un peuple d'oiseau bipède situé au Nord-Ouest du Royaume d'Hyrule, dans la région de Tabanta.</p>
+                <h4>Musique: <audio src="Piaf/Village piaf.ogg" controls loop></audio></h4>
+                <h3>Imagerie</h3>
+                <div style="display: flex; justify-content: space-around;">
+                    <img src="Piaf/Village Piaf img.jpg" style="width: 30%; height: auto;">
+                    <img src="Piaf/village-piaf img2.jpg" style="width: 30%; height: auto;" alt="rafraichir la page">
+                    <img src="Piaf/Village piaf img3.jpg" style="width: 30%; height: auto;">
+                </div>
+            </details>
+            <hr>
+            <details class="details">
+                <summary>Peuple Goron</summary>
+                <p><a href="Goron/goron.html">Le peuple goron</a> est un peuple de pierre humanoïde situé au Nord-Est du Royaume d'Hyrule, sur la Montagne de la Mort.</p>
+                <h4>Musique: <audio src="Goron/Village Goron.ogg" controls loop></audio></h4>
+                <h3>Imagerie</h3>
+                <div style="display: flex; justify-content: space-around;">
+                    <img src="Goron/Village Goron img.webp" style="width: 30%; height: auto;">
+                    <img src="Goron/Village goron img2.jpg" style="width: 30%; height: auto;" alt="rafraichir la page">
+                    <img src="Goron/village goron img3.avif" style="width: 30%; height: auto;">
+                </div>
+            </details>
+            <hr>
+            <details class="details">
+                <summary>Peuple Zora</summary>
+                <p><a href="Zora/zora.html">Le peuple zora</a> est un peuple d'homme-poisson situé au Nord-Est du Royaume d'Hyrule, dans la région de Lanelle.</p>
+                <h4>Musique: <audio src="Zora/Village Zora.ogg" controls loop></audio></h4>
+                <h3>Imagerie</h3>
+                <div style="display: flex; justify-content: space-around;">
+                    <img src="Zora/Domaine Zora img.webp" style="width: 30%; height: auto;">
+                    <img src="Zora/Domaine zora img2.jpg" style="width: 30%; height: auto;" alt="rafraichir la page">
+                    <img src="Zora/Domaine Zora img3.webp" style="width: 30%; height: auto;">
+                </div>
+            </details>
+            <hr>
+            <details class="details">
+                <summary>Peuple Gerudo</summary>
+                <p><a href="Gerudo/gerudo.html">Le peuple gerudo</a> est un peuple de femmes guerrières situé au Sud-Est du Royaume d'Hyrule, dans le Désert Gerudo.</p>
+                <h4>Musique: <audio src="Gerudo/Village Gerudo.ogg" controls loop></audio></h4>
+                <h3>Imagerie</h3>
+                <div style="display: flex; justify-content: space-around;">
+                    <img src="Gerudo/Cité Gerudo img.webp" style="width: 30%; height: auto;">
+                    <img src="Gerudo/Cité gerudo img2.jpg" style="width: 30%; height: auto;" alt="rafraichir la page">
+                    <img src="Gerudo/Cité gerudo img3.jpg" style="width: 30%; height: auto;">
+                </div>
+            </details>
+        </div>
+        <div id="lastPart" style="border-radius: 0 0 30px 30px;">
+            <footer class="footer">
+                <p>© 2023 Nintendo. The Legend of Zelda Tears of the Kingdom. <br>
+                Découvrez aussi notre page sur <a href="https://yoannick.github.io/botw">The Legend of Zelda Breath of the Wild</a></p>
+            </footer>
+        </div>
+    </div>
+        <script src="carrousel/carrousel.js"></script>
+        <script src="search/search.js"></script>
+</body>
+</html>
+
+

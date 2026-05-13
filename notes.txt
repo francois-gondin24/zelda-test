@@ -1,0 +1,8 @@
+reste à faire :
+images de chaque monstre
+voici le design de mon site.
+ Je viens seulement de me rendre 
+ compte que la barre de recherche avait
+  un problème de positionnement. Et après je
+   ne suis pas très satisfait de la présentations des résultats de 
+   la barre de recherche. Voici mes codes

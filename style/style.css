@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "hylia";
+    src: url(hylia-fonts.otf);
+    }
+@font-face {
+    font-family: "diside";
+    src: url(fonts/Diside.otf);
+    }
+@font-face {
+    font-family: "enthusiastic";
+    src: url(fonts/Enthusiastic.ttf);
+    }
+@font-face {
+    font-family: "diplomatic";
+    src: url(fonts/The\ Diplomat\ Signature\ Regular.otf);
+    }
+@font-face {
+    font-family: "botw";
+    src: url(fonts/The\ Wild\ Breath\ of\ Zelda.otf);
+    }
+@font-face {
+    font-family: "gothic";
+    src: url(fonts/vhs-gothic.ttf);
+    }
+body {
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Georgia', serif;
+}
+#header {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+#title{
+    font-family: "hylia";
+    font-size: 50px;
+    text-align: center;
+    color: rgb(0, 204, 170);
+    text-shadow: 2px 2px 4px #000000;
+}
+#container {
+    margin: 20px auto;
+    max-width: 845px;
+    border-radius: 40px;
+}
+#firstPart, #secondPart, #thirdPart, #lastPart {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+h1, h2, h3 {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+}
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+details{
+    font-size: 20px;
+}
+.img{
+    border-radius: 30px;
+    box-shadow: 0 0 20px 10px black;
+}
+.vid{
+    border-radius: 30px;
+    box-shadow: 0 0 20px 10px black;
+}
+.list{
+    font-size: 20px;
+}
+footer{
+    font-size: 20px;
+    text-align: center;
+    margin: 100px auto auto auto;
+}
+.bouton {
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+}
+#container-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.switch {
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  width: 50px;
+  height: 24px;
+}
+.slider {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #a4ffe1;
+  transition: .4s;
+  border-radius: 24px;
+  box-shadow: 0 0 5px #a4ffe1;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-image: url(sun-regular-full.svg);
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #29455c;
+  box-shadow: 0 0 5px #29455c;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-image: url(moon-regular-full.svg);
+}
+.search {
+    display: flex;
+    align-items: center;
+    background: #ffffff; /* Fond blanc */
+    border: 1px solid #ddd; /* Une bordure très fine grise */
+    border-radius: 30px; /* Des coins légèrement arrondis */
+    padding: 8px 12px;
+    width: 250px;
+    box-shadow: 0 0 5px rgb(36, 39, 202); 
+    position: absolute;
+    bottom: 465px;
+    left: 300px;
+}
+.search i {
+    color: #888; /* Couleur de l'icône loupe */
+    margin-right: 10px;
+}
+.search input {
+    border: none; /* ON ENLÈVE LA BARRE LAIDE ICI */
+    outline: none; /* Enlève le contour bleu quand on clique */
+    width: 100%;
+    font-size: 14px;
+    background: transparent;
+    font-family: 'Georgia', serif;
+}
+.search:hover {
+    box-shadow: 0 0 5px rgb(0, 1, 66); /* Un léger effet de survol */
+}
+.monster-card {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: none; /* Caché par défaut */
+    color: #333;
+}
+.monster-card img {
+    width: 150px;
+    border-radius: 10px;
+}
+p {
+    transition: color 0.4s ease;
+}
