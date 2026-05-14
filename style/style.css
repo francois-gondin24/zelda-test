@@ -1,27 +1,30 @@
+/* ===== FONTS ===== */
 @font-face {
     font-family: "hylia";
     src: url(hylia-fonts.otf);
-    }
+}
 @font-face {
     font-family: "diside";
-    src: url(fonts/Diside.otf);
-    }
+    src: url(../fonts/Diside.otf);
+}
 @font-face {
     font-family: "enthusiastic";
-    src: url(fonts/Enthusiastic.ttf);
-    }
+    src: url(../fonts/Enthusiastic.ttf);
+}
 @font-face {
     font-family: "diplomatic";
-    src: url(fonts/The\ Diplomat\ Signature\ Regular.otf);
-    }
+    src: url('../fonts/The Diplomat Signature Regular.otf');
+}
 @font-face {
     font-family: "botw";
-    src: url(fonts/The\ Wild\ Breath\ of\ Zelda.otf);
-    }
+    src: url('../fonts/The Wild Breath of Zelda.otf');
+}
 @font-face {
     font-family: "gothic";
-    src: url(fonts/vhs-gothic.ttf);
-    }
+    src: url(../fonts/vhs-gothic.ttf);
+}
+
+/* ===== BASE ===== */
 body {
     background-position: center;
     margin: 0;
@@ -31,29 +34,118 @@ body {
     color: white;
     font-family: 'Georgia', serif;
 }
+
+/* ===== HEADER ===== */
 #header {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 30px;
     max-width: 800px;
     margin: 20px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-sizing: border-box;
 }
-#title{
+#title {
     font-family: "hylia";
     font-size: 50px;
     text-align: center;
     color: rgb(0, 204, 170);
     text-shadow: 2px 2px 4px #000000;
+    width: 100%;
+    margin: 0 0 10px 0;
 }
+
+/* ===== BARRE DE RECHERCHE ===== */
+.search {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 8px 12px;
+    width: 250px;
+    box-shadow: 0 0 5px rgb(36, 39, 202);
+    box-sizing: border-box;
+    /* PLUS de position absolute ni de bottom/left en pixels fixes */
+}
+.search i {
+    color: #888;
+    margin-right: 10px;
+}
+.search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    background: transparent;
+    font-family: 'Georgia', serif;
+}
+.search:hover {
+    box-shadow: 0 0 5px rgb(0, 1, 66);
+}
+
+/* ===== SWITCH THEME ===== */
+.switch {
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 24px;
+    flex-shrink: 0;
+}
+.slider {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #a4ffe1;
+    transition: .4s;
+    border-radius: 24px;
+    box-shadow: 0 0 5px #a4ffe1;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-image: url(sun-regular-full.svg);
+    background-size: cover;
+    transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: #29455c;
+    box-shadow: 0 0 5px #29455c;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+    background-image: url(moon-regular-full.svg);
+}
+
+/* ===== CONTAINER ===== */
 #container {
     margin: 20px auto;
     max-width: 845px;
     border-radius: 40px;
 }
+#container-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
 #firstPart, #secondPart, #thirdPart, #lastPart {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+/* ===== TYPO ===== */
 h1, h2, h3 {
     text-align: center;
 }
@@ -62,6 +154,22 @@ ul {
     padding: 0;
     margin-left: 20px;
 }
+.list {
+    font-size: 20px;
+}
+details {
+    font-size: 20px;
+}
+p {
+    transition: color 0.4s ease;
+}
+footer {
+    font-size: 20px;
+    text-align: center;
+    margin: 100px auto auto auto;
+}
+
+/* ===== IMAGES ===== */
 img {
     display: block;
     margin: 20px auto;
@@ -70,25 +178,16 @@ img {
     object-fit: cover;
     object-position: center;
 }
-details{
-    font-size: 20px;
-}
-.img{
+.img {
     border-radius: 30px;
     box-shadow: 0 0 20px 10px black;
 }
-.vid{
+.vid {
     border-radius: 30px;
     box-shadow: 0 0 20px 10px black;
 }
-.list{
-    font-size: 20px;
-}
-footer{
-    font-size: 20px;
-    text-align: center;
-    margin: 100px auto auto auto;
-}
+
+/* ===== BOUTONS ===== */
 .bouton {
     text-decoration: none;
     color: white;
@@ -105,88 +204,81 @@ footer{
     box-sizing: border-box;
     position: relative;
 }
-#container-buttons {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    text-decoration: none;
-    margin-bottom: 20px;
-}
-.switch {
-  margin-left: auto;
-  position: relative;
-  display: flex;
-  width: 50px;
-  height: 24px;
-}
-.slider {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #a4ffe1;
-  transition: .4s;
-  border-radius: 24px;
-  box-shadow: 0 0 5px #a4ffe1;
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 18px;
-  width: 18px;
-  left: 3px;
-  bottom: 3px;
-  background-image: url(sun-regular-full.svg);
-  transition: .4s;
-  border-radius: 50%;
-}
-input:checked + .slider {
-  background-color: #29455c;
-  box-shadow: 0 0 5px #29455c;
-}
-input:checked + .slider:before {
-  transform: translateX(26px);
-  background-image: url(moon-regular-full.svg);
-}
-.search {
-    display: flex;
-    align-items: center;
-    background: #ffffff; /* Fond blanc */
-    border: 1px solid #ddd; /* Une bordure très fine grise */
-    border-radius: 30px; /* Des coins légèrement arrondis */
-    padding: 8px 12px;
-    width: 250px;
-    box-shadow: 0 0 5px rgb(36, 39, 202); 
-    position: absolute;
-    bottom: 465px;
-    left: 300px;
-}
-.search i {
-    color: #888; /* Couleur de l'icône loupe */
-    margin-right: 10px;
-}
-.search input {
-    border: none; /* ON ENLÈVE LA BARRE LAIDE ICI */
-    outline: none; /* Enlève le contour bleu quand on clique */
-    width: 100%;
-    font-size: 14px;
-    background: transparent;
-    font-family: 'Georgia', serif;
-}
-.search:hover {
-    box-shadow: 0 0 5px rgb(0, 1, 66); /* Un léger effet de survol */
-}
+
+/* ===== MONSTER CARD (ancienne version, conservée) ===== */
 .monster-card {
     margin-top: 20px;
     padding: 15px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    display: none; /* Caché par défaut */
+    display: none;
     color: #333;
 }
 .monster-card img {
     width: 150px;
     border-radius: 10px;
 }
-p {
-    transition: color 0.4s ease;
+
+/* ===================================================
+   CARROUSEL (fusionné depuis carrousel/carrousel.css)
+   =================================================== */
+.carrousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.arrow.left  { left: 15px; }
+.arrow.right { right: 15px; }
+.arrow:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+.carrousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+.carrousel .img {
+    height: 200px;
+    width: auto;
+    opacity: 0.5;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: scale(0.8);
+    object-fit: cover;
+    margin: 30px 5px;
+}
+.carrousel .img.active {
+    height: 250px;
+    width: auto;
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+    margin: 30px 5px;
+}
+.button {
+    text-decoration: none;
 }
