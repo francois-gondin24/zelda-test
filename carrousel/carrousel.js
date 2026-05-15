@@ -71,3 +71,73 @@ document.getElementById('next').addEventListener('click', () => {
 window.addEventListener('load', () => {
     updateCarrousel(false);
 });
+
+// =====================
+// LIGHTBOX
+// =====================
+
+// Création de la lightbox dans le DOM
+const lightbox = document.createElement('div');
+lightbox.id = 'lightbox';
+lightbox.style.cssText = `
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.88);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    animation: fadeIn 0.3s ease;
+`;
+lightbox.innerHTML = `
+    <button id="lightbox-close" style="
+        position: absolute; top: 20px; right: 30px;
+        background: none; border: none; color: white;
+        font-size: 36px; cursor: pointer; line-height: 1;
+    ">✕</button>
+    <img id="lightbox-img" style="
+        max-width: 60%; max-height: 80vh;
+        border-radius: 20px;
+        box-shadow: 0 0 40px rgba(0,204,170,0.4);
+        object-fit: contain;
+    ">
+    <div id="lightbox-desc" style="
+        max-width: 300px; color: white;
+        font-family: 'Georgia', serif; font-size: 1rem;
+        line-height: 1.7;
+    ">
+        <p id="lightbox-text" style="margin: 0; font-style: italic; color: #ccc;"></p>
+    </div>
+`;
+document.body.appendChild(lightbox);
+
+// Ouvrir la lightbox au clic sur une image active
+carrousel.addEventListener('click', (e) => {
+    const img = e.target.closest('.img');
+    if (!img || !img.classList.contains('active')) return;
+
+    const src = img.src;
+    const desc = img.dataset.description || '';
+
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox-text').textContent = desc;
+    lightbox.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // bloque le scroll
+});
+
+// Fermer la lightbox
+function fermerLightbox() {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = '';
+}
+
+document.getElementById('lightbox-close').addEventListener('click', fermerLightbox);
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) fermerLightbox(); // clic en dehors de l'image
+});
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') fermerLightbox();
+});

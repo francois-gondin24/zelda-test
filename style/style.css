@@ -278,6 +278,7 @@ img {
     transform: scale(1);
     z-index: 1;
     margin: 30px 5px;
+    cursor: zoom-in;
 }
 .button {
     text-decoration: none;
