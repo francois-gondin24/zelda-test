@@ -76,7 +76,13 @@ window.addEventListener('load', () => {
 // LIGHTBOX
 // =====================
 
-// Création de la lightbox dans le DOM
+// On récupère les vraies images (sans clones) pour la navigation lightbox
+function getOriginalImages() {
+    return Array.from(document.querySelectorAll('.carrousel .img')).slice(total, total * 2);
+}
+
+let lightboxIndex = 0; // index dans les images originales
+
 const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
 lightbox.style.cssText = `
@@ -87,57 +93,123 @@ lightbox.style.cssText = `
     z-index: 9999;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    padding: 40px;
+    gap: 30px;
+    padding: 60px 20px 40px;
     box-sizing: border-box;
-    animation: fadeIn 0.3s ease;
 `;
 lightbox.innerHTML = `
+    <!-- Bouton fermer -->
     <button id="lightbox-close" style="
         position: absolute; top: 20px; right: 30px;
-        background: none; border: none; color: white;
-        font-size: 36px; cursor: pointer; line-height: 1;
-    ">✕</button>
-    <img id="lightbox-img" style="
-        max-width: 60%; max-height: 80vh;
-        border-radius: 20px;
-        box-shadow: 0 0 40px rgba(0,204,170,0.4);
-        object-fit: contain;
-    ">
-    <div id="lightbox-desc" style="
-        max-width: 300px; color: white;
-        font-family: 'Georgia', serif; font-size: 1rem;
-        line-height: 1.7;
-    ">
-        <p id="lightbox-text" style="margin: 0; font-style: italic; color: #ccc;"></p>
+        background: none; border: none; color: rgba(255,255,255,0.7);
+        font-size: 32px; cursor: pointer; line-height: 1;
+        transition: color 0.2s, transform 0.2s;
+    " onmouseover="this.style.color='white'; this.style.transform='scale(1.2)'"
+       onmouseout="this.style.color='rgba(255,255,255,0.7)'; this.style.transform='scale(1)'">✕</button>
+
+    <!-- Flèche gauche -->
+    <button id="lightbox-prev" style="
+        background: none; border: none; color: rgba(255,255,255,0.5);
+        font-size: 52px; cursor: pointer; line-height: 1;
+        transition: color 0.2s, transform 0.2s;
+        flex-shrink: 0; padding: 10px;
+        user-select: none;
+    " onmouseover="this.style.color='#00ccaa'; this.style.transform='scale(1.15)'"
+       onmouseout="this.style.color='rgba(255,255,255,0.5)'; this.style.transform='scale(1)'">❮</button>
+
+    <!-- Image + description -->
+    <div style="display: flex; align-items: center; gap: 30px; max-width: 85%;">
+        <img id="lightbox-img" style="
+            max-width: 640px; max-height: 75vh;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(0,204,170,0.35);
+            object-fit: contain;
+            transition: opacity 0.25s ease;
+        ">
+        <div style="max-width: 260px; flex-shrink: 0;">
+            <p id="lightbox-counter" style="
+                color: #00ccaa; font-size: 0.85rem;
+                margin: 0 0 10px 0; letter-spacing: 1px;
+            "></p>
+            <p id="lightbox-text" style="
+                margin: 0; font-style: italic;
+                color: #ccc; font-family: 'Georgia', serif;
+                font-size: 1rem; line-height: 1.7;
+            "></p>
+        </div>
     </div>
+
+    <!-- Flèche droite -->
+    <button id="lightbox-next" style="
+        background: none; border: none; color: rgba(255,255,255,0.5);
+        font-size: 52px; cursor: pointer; line-height: 1;
+        transition: color 0.2s, transform 0.2s;
+        flex-shrink: 0; padding: 10px;
+        user-select: none;
+    " onmouseover="this.style.color='#00ccaa'; this.style.transform='scale(1.15)'"
+       onmouseout="this.style.color='rgba(255,255,255,0.5)'; this.style.transform='scale(1)'">❯</button>
 `;
 document.body.appendChild(lightbox);
 
-// Ouvrir la lightbox au clic sur une image active
-carrousel.addEventListener('click', (e) => {
-    const img = e.target.closest('.img');
-    if (!img || !img.classList.contains('active')) return;
+function mettreAJourLightbox() {
+    const imgs = getOriginalImages();
+    const img = imgs[lightboxIndex];
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.style.opacity = '0';
+    setTimeout(() => {
+        lightboxImg.src = img.src;
+        document.getElementById('lightbox-text').textContent = img.dataset.description || '';
+        document.getElementById('lightbox-counter').textContent = `${lightboxIndex + 1} / ${imgs.length}`;
+        lightboxImg.style.opacity = '1';
+    }, 150);
+}
 
-    const src = img.src;
-    const desc = img.dataset.description || '';
-
-    document.getElementById('lightbox-img').src = src;
-    document.getElementById('lightbox-text').textContent = desc;
+function ouvrirLightbox(index) {
+    lightboxIndex = index;
+    mettreAJourLightbox();
     lightbox.style.display = 'flex';
-    document.body.style.overflow = 'hidden'; // bloque le scroll
-});
+    document.body.style.overflow = 'hidden';
+}
 
-// Fermer la lightbox
 function fermerLightbox() {
     lightbox.style.display = 'none';
     document.body.style.overflow = '';
 }
 
+// Ouvrir au clic sur l'image active du carrousel
+carrousel.addEventListener('click', (e) => {
+    const img = e.target.closest('.img');
+    if (!img || !img.classList.contains('active')) return;
+
+    // Trouver l'index dans les images originales
+    const imgs = getOriginalImages();
+    const idx = imgs.findIndex(i => i.src === img.src);
+    ouvrirLightbox(idx !== -1 ? idx : 0);
+});
+
+// Navigation dans la lightbox
+document.getElementById('lightbox-prev').addEventListener('click', (e) => {
+    e.stopPropagation();
+    const imgs = getOriginalImages();
+    lightboxIndex = (lightboxIndex - 1 + imgs.length) % imgs.length;
+    mettreAJourLightbox();
+});
+document.getElementById('lightbox-next').addEventListener('click', (e) => {
+    e.stopPropagation();
+    const imgs = getOriginalImages();
+    lightboxIndex = (lightboxIndex + 1) % imgs.length;
+    mettreAJourLightbox();
+});
+
+// Fermeture
 document.getElementById('lightbox-close').addEventListener('click', fermerLightbox);
 lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) fermerLightbox(); // clic en dehors de l'image
+    if (e.target === lightbox) fermerLightbox();
 });
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') fermerLightbox();
+    if (lightbox.style.display === 'flex') {
+        if (e.key === 'Escape') fermerLightbox();
+        if (e.key === 'ArrowLeft') { const imgs = getOriginalImages(); lightboxIndex = (lightboxIndex - 1 + imgs.length) % imgs.length; mettreAJourLightbox(); }
+        if (e.key === 'ArrowRight') { const imgs = getOriginalImages(); lightboxIndex = (lightboxIndex + 1) % imgs.length; mettreAJourLightbox(); }
+    }
 });

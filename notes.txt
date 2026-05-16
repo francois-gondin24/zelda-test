@@ -1,3 +1,7 @@
 reste à faire :
     images de chaque monstre
-    nom des images sous le carrousel
+    flèches carrousel zoom
+    page korogu
+    animations <details>
+    carte interactive
+    
