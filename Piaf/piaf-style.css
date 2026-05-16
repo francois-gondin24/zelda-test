@@ -15,17 +15,13 @@ header {
     text-align: center;
     border-radius: 30px;
 }
-h1 {
-    margin: 0;
-}
+h1 { margin: 0; }
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
 }
-section {
-    padding: 20px;
-}
+section { padding: 20px; }
 .content {
     max-width: 900px;
     margin: 0 auto;
@@ -40,9 +36,7 @@ section {
     padding: 10px;
     margin-bottom: 15px;
 }
-.quest h3 {
-    margin-top: 0;
-}
+.quest h3 { margin-top: 0; }
 .container {
     padding: 20px;
     background-color: #2c702aa9;
@@ -50,7 +44,7 @@ section {
     max-width: 762px;
     margin: 20px auto;
 }
-.img2{
+.img2 {
     border-radius: 30px;
     box-shadow: 0 0 20px 10px #2c702aa9;
 }
@@ -68,11 +62,7 @@ button {
     border-radius: 12px;
     transition: background-color 0.3s ease;
 }
-
-button:hover {
-    background-color: #234b22a9;
-}
-
+button:hover { background-color: #234b22a9; }
 footer {
     background-color: #2c702aa9;
     color: white;
@@ -83,7 +73,6 @@ footer {
     bottom: 0;
     border-radius: 30px 30px 0 0;
 }
-
 .card {
     background-color: #ffffff;
     color: #324a71;
@@ -92,15 +81,9 @@ footer {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.card h3 {
-    margin-top: 0;
-}
-
-.card p {
-    margin: 10px 0;
-}
-.img{
+.card h3 { margin-top: 0; }
+.card p { margin: 10px 0; }
+.img {
     border-radius: 15px;
     box-shadow: 0 0 20px 10px #2c702aa9;
 }
@@ -109,4 +92,58 @@ footer {
     padding-top: 10px;
     position: relative;
     top: -20px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    header {
+        margin: 10px;
+        padding: 15px;
+        border-radius: 20px;
+    }
+    h1 { font-size: 22px; }
+    h2 { font-size: 18px; }
+    h3 { font-size: 16px; }
+    .container {
+        margin: 10px;
+        padding: 15px;
+        border-radius: 20px;
+    }
+    .content { padding: 0 10px; }
+    section { padding: 10px; }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    #img {
+        width: 50%;
+        top: 0;
+    }
+    footer {
+        font-size: 13px;
+        padding: 8px;
+        /* Evite que le footer fixe cache le contenu */
+        position: relative;
+        border-radius: 20px;
+        margin-top: 20px;
+        width: auto;
+    }
+    button {
+        width: 100%;
+        font-size: 15px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+    nav a {
+        margin: 0;
+        background: rgba(44, 112, 42, 0.5);
+        padding: 8px 16px;
+        border-radius: 12px;
+        width: 80%;
+        text-align: center;
+    }
 }

@@ -69,7 +69,7 @@ body {
     width: 250px;
     box-shadow: 0 0 5px rgb(36, 39, 202);
     box-sizing: border-box;
-    /* PLUS de position absolute ni de bottom/left en pixels fixes */
+    position: relative;
 }
 .search i {
     color: #888;
@@ -146,23 +146,15 @@ input:checked + .slider:before {
 }
 
 /* ===== TYPO ===== */
-h1, h2, h3 {
-    text-align: center;
-}
+h1, h2, h3 { text-align: center; }
 ul {
     list-style-type: none;
     padding: 0;
     margin-left: 20px;
 }
-.list {
-    font-size: 20px;
-}
-details {
-    font-size: 20px;
-}
-p {
-    transition: color 0.4s ease;
-}
+.list { font-size: 20px; }
+details { font-size: 20px; }
+p { transition: color 0.4s ease; }
 footer {
     font-size: 20px;
     text-align: center;
@@ -205,7 +197,7 @@ img {
     position: relative;
 }
 
-/* ===== MONSTER CARD (ancienne version, conservée) ===== */
+/* ===== MONSTER CARD ===== */
 .monster-card {
     margin-top: 20px;
     padding: 15px;
@@ -220,7 +212,7 @@ img {
 }
 
 /* ===================================================
-   CARROUSEL (fusionné depuis carrousel/carrousel.css)
+   CARROUSEL
    =================================================== */
 .carrousel-container {
     position: relative;
@@ -281,6 +273,113 @@ img {
     margin: 30px 5px;
     cursor: zoom-in;
 }
-.button {
-    text-decoration: none;
+.button { text-decoration: none; }
+
+/* ===================================================
+   MOBILE — max-width: 768px
+   =================================================== */
+@media (max-width: 768px) {
+
+    /* Header */
+    #header {
+        margin: 10px;
+        padding: 15px;
+        border-radius: 20px;
+        gap: 12px;
+    }
+    #title {
+        font-size: 26px;
+        margin: 0 0 8px 0;
+    }
+
+    /* Barre de recherche pleine largeur */
+    .search {
+        width: 100%;
+        flex: 1;
+    }
+    .switch {
+        margin-left: 0;
+    }
+
+    /* Container */
+    #container {
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+    /* Boutons navigation en colonne */
+    #container-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .bouton {
+        width: 100%;
+        max-width: 300px;
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    /* Sections */
+    #firstPart, #secondPart, #thirdPart, #lastPart {
+        padding: 12px;
+    }
+
+    /* Titres */
+    h2 { font-size: 20px; }
+    h3 { font-size: 17px; }
+    .list { font-size: 16px; }
+    details { font-size: 16px; }
+    footer { font-size: 14px; margin-top: 40px; }
+
+    /* Images peuples en colonne */
+    #thirdPart details div[style] {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    #thirdPart details div[style] img {
+        width: 90% !important;
+        margin: 8px auto;
+    }
+
+    /* Audio pleine largeur */
+    audio {
+        width: 100%;
+        margin-top: 8px;
+        display: block;
+    }
+
+    /* Carrousel réduit */
+    .carrousel .img {
+        height: 110px;
+        margin: 12px 3px;
+    }
+    .carrousel .img.active {
+        height: 150px;
+        margin: 12px 3px;
+    }
+    .arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+    .arrow.left  { left: 3px; }
+    .arrow.right { right: 3px; }
+
+    /* Lightbox en colonne sur mobile */
+    #lightbox {
+        flex-direction: column !important;
+        padding: 60px 10px 20px !important;
+        gap: 10px !important;
+        align-items: center !important;
+    }
+    #lightbox-img {
+        max-width: 95% !important;
+        max-height: 45vh !important;
+    }
+    #lightbox-prev,
+    #lightbox-next {
+        font-size: 32px !important;
+        padding: 5px !important;
+    }
 }
