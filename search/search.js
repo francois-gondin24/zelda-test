@@ -1,6 +1,6 @@
 const switchElement = document.querySelector('#theme-checkbox');
 const themeIcon = document.querySelector('#theme-icon');
-const corps = document.querySelectorAll('#header, .bouton, #firstPart, #secondPart, #thirdPart, #lastPart');
+const corps = document.querySelectorAll('#header, .bouton, #firstPart, #secondPart, #thirdPart, #fourthPart, #lastPart');
 const searchInput = document.querySelector('#monsterSearch');
 const parts = ['#firstPart', '#secondPart', '#thirdPart', '#lastPart'];
 

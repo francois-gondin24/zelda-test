@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte d'Hyrule</title>
+    <link href="carte style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Le conteneur principal qui englobe tout -->
+    <div id="carte-container">
+
+        <!-- L'image de la carte -->
+        <img id="carte-img" src="hyrule map.webp" alt="Carte d'Hyrule">
+
+        <!-- Les zones cliquables — une par peuple -->
+        <div class="zone" id="zone-piaf"    data-peuple="piaf"></div>
+        <div class="zone" id="zone-goron"   data-peuple="goron"></div>
+        <div class="zone" id="zone-zora"    data-peuple="zora"></div>
+        <div class="zone" id="zone-gerudo"  data-peuple="gerudo"></div>
+
+        <!-- La fiche qui apparaît au clic -->
+        <div id="fiche">
+            <button id="fiche-close">✕</button>
+            <h2 id="fiche-nom"></h2>
+            <p id="fiche-description"></p>
+            <a id="fiche-lien" href="#">→ Voir la page du peuple</a>
+        </div>
+
+    </div>
+
+    <script src="carte.js"></script>
+</body>
+</html>

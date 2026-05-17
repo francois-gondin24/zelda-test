@@ -6,6 +6,7 @@
     <title>Zelda-totk</title>
     <link href="style/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63f602bab9.js" crossorigin="anonymous"></script>
+    <link href="Map interactive/carte style.css" rel="stylesheet">
 </head>
 <body>
     <header id="header">
@@ -157,6 +158,22 @@
                 </div>
             </details>
         </div>
+        <div id="fourthPart">
+    <h3>Carte d'Hyrule</h3>
+    <div id="carte-container">
+        <img id="carte-img" src="Map interactive/hyrule map.webp" alt="Carte d'Hyrule">
+        <div class="zone" id="zone-piaf"   data-peuple="piaf"></div>
+        <div class="zone" id="zone-goron"  data-peuple="goron"></div>
+        <div class="zone" id="zone-zora"   data-peuple="zora"></div>
+        <div class="zone" id="zone-gerudo" data-peuple="gerudo"></div>
+        <div id="fiche">
+            <button id="fiche-close">✕</button>
+            <h2 id="fiche-nom"></h2>
+            <p id="fiche-description"></p>
+            <a id="fiche-lien" href="#">→ Voir la page du peuple</a>
+        </div>
+    </div>
+</div>
         <div id="lastPart" style="border-radius: 0 0 30px 30px;">
             <footer class="footer">
                 <p>© 2023 Nintendo. The Legend of Zelda Tears of the Kingdom. <br>
@@ -166,5 +183,6 @@
     </div>
     <script src="carrousel/carrousel.js"></script>
     <script src="search/search.js"></script>
+    <script src="Map interactive/carte.js"></script>
 </body>
 </html>

@@ -140,7 +140,7 @@ input:checked + .slider:before {
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
-#firstPart, #secondPart, #thirdPart, #lastPart {
+#firstPart, #secondPart, #thirdPart, #fourthPart, #lastPart {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -154,6 +154,7 @@ ul {
 }
 .list { font-size: 20px; }
 details { font-size: 20px; }
+
 p { transition: color 0.4s ease; }
 footer {
     font-size: 20px;
@@ -351,12 +352,12 @@ img {
 
     /* Carrousel réduit */
     .carrousel .img {
-        height: 110px;
-        margin: 12px 3px;
+        height: 80px;
+        margin: 10px 3px;
     }
     .carrousel .img.active {
-        height: 150px;
-        margin: 12px 3px;
+        height: 110px;
+        margin: 10px 3px;
     }
     .arrow {
         width: 30px;

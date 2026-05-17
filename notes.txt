@@ -1,7 +1,11 @@
 reste à faire :
     images de chaque monstre
-    flèches carrousel zoom
     page korogu
-    animations <details>
-    carte interactive
-    
+    carte interactive ✅ :
+         villages 
+         sanctuaires 
+         sous-terrains / ciel :
+             zoom sur certaines îles (notamment prélude et temples)
+             temples + chateau 
+
+        
